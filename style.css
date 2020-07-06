@@ -52,13 +52,17 @@ header {
 
 pre {
     background-color: #aaa;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
-@media (max-width:600px) {
+.internal {
+    padding-right: 20px;
+}
+
+@media (max-width:500px) {
     body {
         flex-direction: column;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
     }
     nav {
         border-right: none;
@@ -66,16 +70,16 @@ pre {
         height: 200px;
         overflow-y: scroll;
         width: 100%;
-        position: fixed;
+        /* position: fixed; */
     }
     main {
         height: auto;
         width: 100%;
     }
-    section {
+    /* section {
         padding-top: 200px;
-    }
-    .code {
+    } */
+    code {
         display: flex;
         align-items: center;
         justify-content: center;
